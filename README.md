@@ -1,7 +1,8 @@
-# Backlog
-Nesse desafio, você vai desenvolver uma aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia, que contém as seguintes funcionalidades:
+# Coffee Delivery
 
-Link do desafio: https://efficient-sloth-d85.notion.site/Desafio-02-Coffee-Delivery-30e42a21fdb44b09a85244fc2c3dbdf9
+Este projeto criado com React.JS é o front-end de uma mini aplicação web para Delivery de Cafés.
+
+## Funcionalidades
 
 - Listagem de produtos (cafés) disponíveis para compra
 - Adicionar uma quantidade específicas de itens no carrinho
@@ -10,7 +11,11 @@ Link do desafio: https://efficient-sloth-d85.notion.site/Desafio-02-Coffee-Deliv
 - Exibir o total de itens no carrinho no Header
 - Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
 
-# Tasks
-[X] UI Home
-[] UI Checkout
-[] UI Success 
+## Bibliotecas
+
+- TypeScript
+- Styled Components
+- React Router Dom
+- React Hook Form
+- Zod
+- Phosphor Icons

@@ -1,4 +1,4 @@
-import { Section, SectionContainer, IconContainer, Title, SubTitle, SuccessImage, SectionResponsiveContainer } from './styles';
+import { Section, SectionContainer, IconContainer, Title, SubTitle, SuccessImage, SectionResponsiveContainer } from './Styles';
 import { Box, Row, Column } from '@components/Styled';
 import { MapPin, Timer, CurrencyDollar } from '@phosphor-icons/react';
 import { useTheme } from 'styled-components';
@@ -10,7 +10,7 @@ const paymentMethod = {
     debito: 'Cartão de Débito',
     dinheiro: 'Dinheiro',
     pix: 'PIX'
-}
+} as const;
 
 export default function SuccessPage() {
 
@@ -56,7 +56,7 @@ export default function SuccessPage() {
                                 </IconContainer>
                                 <Column>
                                     <p>Pagamento na entrega</p>
-                                    <p><b>{paymentMethod[payMethod]}</b></p>
+                                    <p><b>{paymentMethod[payMethod as keyof typeof paymentMethod]}</b></p>
                                 </Column>
                             </Row>
                         </Column>
